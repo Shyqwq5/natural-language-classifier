@@ -30,6 +30,8 @@ def clean_and_save_news_data(df,path = 'cleaned_news_data.csv'):
 
     df = df[ df['lang'] ==  'en']
     df = df.drop('lang',axis = 1)
+    df = df.drop('link',axis = 1)
+    df = df.drop('domain',axis = 1)
     df = df.drop('published_date',axis = 1)
     df = df.drop_duplicates()
     logger.info("data cleaned")
