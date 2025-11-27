@@ -2,10 +2,30 @@
 
 ## 🛠 Usage
 
+### 0. Set the nesscery environment
+
+Run the script to set environment:
+
+```bash
+python -m venv venv
+source venv/bin/activate
+export PYTHONPATH=$(pwd)
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
 ### 1. Preprocess the dataset
 
 Run the ingestion script to clean and prepare the data:
 
 ```bash
 python ingest.py
+```
+
+### 2. Train the model
+
+Run the train model script to train and save the model, vectorizer, mapping:
+
+```bash
+python train_model.py
 ```
