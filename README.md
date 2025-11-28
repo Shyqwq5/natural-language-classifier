@@ -29,3 +29,11 @@ Run the train model script to train and save the model, vectorizer, mapping:
 ```bash
 python train_model.py
 ```
+
+### 3.Talk with the model
+
+Simple run simple_interface.py and you can start chat with model in terminal.
+
+```bash
+python simple_interface.py
+```
