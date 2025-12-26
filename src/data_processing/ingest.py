@@ -5,7 +5,7 @@ import pandas as pd
 
 
 
-def load_data(path = "labeled_newscatcher_dataset.csv",url = "https://raw.githubusercontent.com/kotartemiy/topic-labeled-news-dataset/refs/heads/master/labeled_newscatcher_dataset.csv"):
+def load_data(path,url):
     logger = logging.getLogger(__name__)
     logger.info("ingest_data")
 
