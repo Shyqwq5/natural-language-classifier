@@ -1,26 +1,19 @@
-# Python cache
+# Python
 __pycache__/
 *.pyc
 
-
-# Virtual env
-venv/
-.env
-
-# Model artifacts / ML outputs
-saved_model/
+# Model artifacts
+src/saved_model/
 *.pkl
 *.joblib
 *.pt
 *.bin
-*.onnx
-*.h5
 
-
-# Datasets / outputs
+# Data
 data/
 *.csv
 *.parquet
-*.zip
-*.tar
-*.gz
+
+# Env
+venv/
+.env
