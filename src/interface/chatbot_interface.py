@@ -45,15 +45,16 @@ def polish_output(user_input):
 ROOT = get_path(2)
 save_model_path = ROOT/"src"/'saved_model'
 news_classifier = NewsClassifier(save_model_path/"trained_lg_model.pkl",save_model_path/'mapping.pkl',save_model_path/'vectorizer.pkl' )
-print('classifier running, enter `exit` to quit')
 while True:
-    input_text = input('Enter a news headline to classify:')
+    input_text = input('''📰 Give me a news title!
+    I'll try to figure out the most relevant news_topic for it.
+    (Type "exit" to quit)
+    >:
+    ''')
     if input_text == 'exit':
         break
     news_headline = extra_title(input_text)
-    print(news_headline)
     classification = news_classifier.classify_review(news_headline)
-    print(classification)
     output = polish_output('raw_input: '+ input_text + ' news_topic:' + classification)
     print(output)
 
